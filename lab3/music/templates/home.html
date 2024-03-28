@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальное приложение</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .card ul,
+        .card ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .card li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Добро пожаловать в музыкальное приложение, {{ user.username }}</h1>
+</div>
+
+<div class="container">
+    <h2>Альбомы</h2>
+    <div class="card">
+        <img src="https://via.placeholder.com/100" alt="Future Nostalgia">
+        <div class="card-content">
+            <h3>Future Nostalgia</h3>
+            <p>Альбом Dua Lipa</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/100" alt="Positions">
+        <div class="card-content">
+            <h3>Positions</h3>
+            <p>Альбом Ariana Grande</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/100" alt="Fine Line">
+        <div class="card-content">
+            <h3>Fine Line</h3>
+            <p>Альбом Harry Styles</p>
+        </div>
+    </div>
+
+    <h2>Треки</h2>
+    <div class="card">
+        <img src="https://via.placeholder.com/100" alt="Bad Guy">
+        <div class="card-content">
+            <h3>Bad Guy</h3>
+            <p>Трек Billie Eilish</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/100" alt="Shape of You">
+        <div class="card-content">
+            <h3>Shape of You</h3>
+            <p>Трек Ed Sheeran</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/100" alt="God's Plan">
+        <div class="card-content">
+            <h3>God's Plan</h3>
+            <p>Трек Drake</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Музыкальное приложение. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
